@@ -1,0 +1,27 @@
+.main-bg{
+    background-color: rgb(3,29,46) !important;
+}
+
+.secondry-bg{
+    background-color: rgb(7,39,60) !important;
+}
+
+.third-bg{
+    background-color: rgb(23,56,78) !important;
+}
+
+.forth-bg{
+    background-color:rgb(255,112,16);
+}
+
+.hover-color{
+    color: rgb(255,112,16);
+}
+
+.hover-bg{
+    background-color: rgb(255,112,16);
+}
+
+.text-information{
+    color: rgb(151,176,193);
+}

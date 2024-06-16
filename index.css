@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg:rgb(3,29,46);
+    --secndory-bg:rgb(7,39,60);
+    --third-bg:rgb(23,56,78);
+    --hover-color:rgb(255,112,16);
+    --hover-bg:rgb(255,112,16);
+    --text-information:rgb(151,176,193);
+}
+
+body{
+    font-family: "Lora", serif !important;
+    background-color: var(--main-bg) !important;
+}
+
+.contact-img{
+    padding: 12px 14px;
+}
+
+.user{
+    padding: 4px 8px;
+}
+
+.dropdown-menu{
+    background-color: var(--secndory-bg) !important;
+}
+
+.dropdown-item{
+    color: white !important;
+}
+
+.dropdown-item:hover{
+    color:var(--hover-color) !important;
+}
+
+.collapse ul li a:hover{
+    color: var(--hover-color);
+
+}
+
+.collapse ul li{
+    position: relative;
+}
+
+.collapse ul li::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    margin: 0px auto;
+    width: 90%;
+    height: 2px;
+    background-color: var(--hover-bg);
+    display: none;
+}
+
+.collapse ul li:hover::before{
+    display: block;
+}
+
+.head-contant h5{
+    color: var(--hover-color);
+    font-size: 26px;
+   
+}
+
+.head-contant h1{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.head-contant p{
+    color: white;
+    margin-bottom: 25px;
+
+}
+
+.button1{
+    width: 20vw;
+}
+
+.img-sec{
+    position: relative;
+}
+
+.head-img{
+    width: 300px;
+}
+
+.head-img img{
+    width: 100%;
+}
+
+.one-image{
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.one-image:hover{
+    position: relative;
+    z-index: 5;
+    width: 350px;
+}
+
+.two-image{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    z-index: 3;
+}
+
+.two-image:hover{
+    z-index: 5;
+    width: 350px;
+}
+
+.three-image{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 165px;
+    right: 130px;
+    z-index: 4;
+}
+
+.three-image:hover{
+    z-index: 5;
+    width: 350px;
+}
+
+@media only screen and (max-width:768px){
+    .head-contant h5{
+        text-align: center;
+    }
+
+    .head-contant h1{
+        text-align: center;
+    }
+
+    .head-contant p{
+        text-align: center;
+    }
+
+    .button1{
+        width: 80vw;
+        margin: 0px auto;
+    }
+
+    .one-image{
+        width: 300px !important;
+        transition: all 0.3s ease-in-out;
+        position: relative !important;
+        top: 10px;
+        right: -44px;
+        z-index: 2 !important;
+    }
+
+    .one-image img{
+        width: 100% !important;
+    }
+    
+    .two-image{
+        width: 272px !important;
+        transition: all 0.3s ease-in-out;
+        position: absolute !important;
+        top: 125px;
+        right: 72px;
+        z-index: 3 !important;
+    }
+
+    .three-image{
+        width: 250px !important;
+        transition: all 0.3s ease-in-out;
+        position: absolute !important;
+        top: 200px;
+        right: 82px;
+        z-index: 3 !important;
+    }
+}
+
+.event{
+    margin-top: 150px;
+}
+
+.event .event-h1{
+    position: relative;
+}
+
+.event .event-h1::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 500px;
+    width: 100px;
+    height: 5px;
+    background-color: var(--hover-color);
+
+}
+
+.form .input{
+    border: none;
+    color: var(--text-information);
+    padding: 12px 0px;
+}
+
+#puja{
+    border: none;
+    color: var(--text-information);
+}
+
+.event-btn{
+    background-color: var(--hover-bg) !important;
+    margin-top: 36px;
+    margin-left: 20px !important;
+    padding: 8px 20px !important;
+}
+
+@media only screen and (max-width:768px){
+    .event .event-h1::before{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 145px;
+        width: 100px;
+        height: 5px;
+        background-color: var(--hover-color);
+    
+    }
+
+    .event-btn{
+        background-color: var(--hover-bg) !important;
+        padding: 8px 20px !important;
+        width: 80vw;
+    }
+}
+
+.popular{
+    margin-top: 150px;
+}
+
+.popular .popular-h1{
+    position: relative;
+}
+
+.popular .popular-h1::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 565px;
+    width: 100px;
+    height: 5px;
+    background-color: var(--hover-color);
+
+}
+
+.line{
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: var(--hover-bg);
+    margin: 0px auto;
+}
+
+.card-a:hover{
+    color: white;
+
+}
+
+.card{
+    height: 400px !important;
+    box-shadow: 4px 4px 20px 0px;
+}
+
+@media only screen and (max-width:768px){
+
+
+    .popular .popular-h1::before{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 148px;
+        width: 100px;
+        height: 5px;
+        background-color: var(--hover-color);
+    
+    }
+
+    .card{
+        width: 90vw !important;
+    }
+    
+}
+
+.line1{
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: var(--hover-bg);
+}
+
+.why{
+    margin-top: 200px;
+}
+
+.Choose2{
+    position: relative;
+}
+
+.c-span2{
+    position: absolute;
+    top: 56px;
+    left: 66px;
+}
+
+.Choose3{
+    position: relative;
+}
+
+.c-span3{
+    position: absolute;
+    top: 56px;
+    left: 66px;
+}
+
+.Choose4{
+    position: relative;
+}
+
+.c-span4{
+    position: absolute;
+    top: 56px;
+    left: 66px;
+}
+
+@media only screen and (max-width:768px){
+    .Choose2{
+        width: 50vw !important;
+        margin: 20px auto;
+    }
+
+    .Choose3{
+        width: 51vw !important;
+        margin: 20px auto;
+    }
+
+    .Choose4{
+        width: 50vw !important;
+        margin: 20px auto;
+    }
+}
+
+.customers{
+    padding: 1px;
+}
+
+.cus-h1{
+    margin-top: 75px;
+}
+
+.line2{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--hover-bg);
+    margin: 30px auto;
+}
+
+.y-row{
+    margin-top: 100px !important;
+}
+
+.cus-1{
+    height: 300px;
+    position: relative;
+}
+
+.cus-img{
+    position: absolute;
+    top: -48px;
+    left: 135px;
+}
+
+.cus-img span{
+    background-color: var(--hover-bg);
+    padding: 8px 13px;
+    position: absolute;
+    top: 55px;
+    left: 75px;
+}
+
+@media only screen and (max-width:768px){
+    .cus-1{
+        margin-top: 75px !important;
+    }
+}
+
+.line3{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--hover-bg);
+    margin: 20px auto;
+}
+
+.view{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sec1 .bg-image{
+    background-image: url("./image/Aksharabhyasa-bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-image h4{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sec1:hover h4{
+    display: block !important;
+}
+
+.sec2 .bg-image{
+    background-image: url("./image/Mundan-bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sec2:hover h4{
+    display: block !important;
+}
+
+.sec3 .bg-image{
+    background-image: url("./image/Namakarana-bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sec3:hover h4{
+    display: block !important;
+}
+
+.sec4 .bg-image{
+    background-image: url("./image/Uttara\ Kriya\ Karma-bg.jpg");
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sec4:hover h4{
+    display: block !important;
+}
+
+@media only screen and (max-width:768px){
+    .view{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.fa-facebook-f{
+    padding: 10px 12px;
+}
+
+.fa-instagram{
+    padding: 10px 12px;
+}
+
+.fa-youtube{
+    padding: 10px 12px;
+}
+
+.line4{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--hover-bg);
+}
